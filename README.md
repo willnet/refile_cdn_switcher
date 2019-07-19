@@ -1,8 +1,8 @@
 # RefileCdnSwitcher
 
-If you use refile and have to deal with sensitive file, you can use [Authentication](https://github.com/refile/refile#authentication). But if you use CDN(you should use CDN), users enable bypass it.
+If you use refile and have to deal with sensitive file, you can use [Authentication](https://github.com/refile/refile#authentication). But if you use CDN(you should use CDN), users can bypass it.
 
-RefileCdnSwitcher disable CDN by default.
+RefileCdnSwitcher disable CDN by default and enable it selectively.
 
 ## Installation
 
@@ -39,7 +39,7 @@ Rails.application.routes.default_url_options = { host: 'yourhost', port: 'yourpo
 
 ## Usage
 
-If you want to use cdn, you can pass `cdn: true` option to attachment method.
+If you want to use cdn, you can pass `cdn: true` option to attachment method. (and ofcource set Refile.cdn_host)
 
 ```ruby
 class User < ApplicationRecord
