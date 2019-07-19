@@ -11,7 +11,7 @@ PATH
   specs:
     refile_cdn_switcher (0.1.0)
       rails
-      refile (= 0.7.0)
+      refile (>= 0.6.2)
 
 GEM
   remote: https://rubygems.org/
